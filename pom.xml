@@ -194,11 +194,11 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.29</version>
 		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>com.microsoft.sqlserver</groupId> -->
-		<!-- <artifactId>sqljdbc4</artifactId> -->
-		<!-- <version>4.0</version> -->
-		<!-- </dependency> -->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>4.0</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
@@ -386,8 +386,13 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<!-- tomcat7的插件， 不同tomcat版本这个也不一样 -->
 				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.1</version>
+				<version>2.2</version>
 				<configuration>
+<!-- 					<url>http://192.168.1.224:8080/manager/text</url> -->
+<!-- 			        <username>admin</username> -->
+<!-- 			        <password>admin</password> -->
+<!-- 			        <update>true</update> -->
+<!-- 			        <path>/webapp</path> -->
 					<!-- 通过maven tomcat7:run运行项目时，访问项目的端口号 -->
 					<port>9090</port>
 					<!-- 项目访问路径 本例：localhost:9090, 如果配置的aa， 则访问路径为localhost:9090/aa -->
